@@ -8,7 +8,16 @@ const bot = new TelegramBot(token, {polling: true});
 
 bot.onText(/\/inspirame/, msg => {
   
-    const array = ["JS","Python","Java","C#","Go", "Php"];
+    const array = [
+        "Es genial trabajar con ordenadores. No discuten, lo recuerdan todo y no se beben tu cerveza",
+        "Hardware: las partes de un ordenador que pueden ser pateadas",
+        "Somos Microsoft. La resistencia es inútil. Serás absorbido",
+        "Controlar la complejidad es la esencia de la programación",
+        "Esto es lo que ocurre con la gente que piensa que odia los ordenadores. Lo que realmente odia es a los programadores",
+        "Eres el **if** en el que siempre quiero caer",
+        "Eres el bucle que no quiero terminar",
+        "Eres el while infinito del que nunca quiero salir",
+    ];
   
     const randomElement = array[Math.floor(Math.random() * array.length)];
   
